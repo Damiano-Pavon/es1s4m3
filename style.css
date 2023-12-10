@@ -1,0 +1,132 @@
+body {
+  background-color: black;
+  color: white;
+  margin-inline: 30px;
+}
+nav {
+  background-color: black;
+}
+nav img {
+  height: 30px;
+}
+nav ion-icon {
+  color: white;
+}
+
+nav form {
+  display: flex;
+  align-items: center;
+}
+.listaGenere {
+  border: 1px white solid;
+  height: 30px;
+  align-items: center;
+  border-radius: 0;
+}
+h2 {
+  font-size: 25px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+}
+.movie__wrap {
+  transition: 0.2s;
+  transition-delay: 0.2s;
+  cursor: pointer;
+}
+.movie__wrap img:hover {
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+.movie__wrap img {
+  z-index: -1;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+.movie__wrap .movie__details {
+  height: 0px;
+  opacity: 0;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+  top: 100%;
+  z-index: 1;
+  background-color: rgb(20, 18, 18);
+  color: white;
+  padding: 10px;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.movie__wrap:hover .movie__details {
+  height: unset;
+  opacity: 1;
+}
+.movie__wrap .movie__controls .movie__play {
+  width: 25%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 25px;
+  padding-inline-start: 10px;
+}
+.movie__wrap .movie__controls h4 {
+  width: 40%;
+  font-size: 15px;
+}
+.movie__wrap .movie__controls .movie__options button {
+  aspect-ratio: 1/1;
+  width: 50%;
+  border-radius: 50%;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+}
+.movie__wrap .movie__controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.movie__details p {
+  color: rgb(255, 255, 255, 0.6);
+  font-weight: bold;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.movie__details h3 {
+  font-size: 15px;
+}
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-inner:hover {
+  z-index: 1;
+}
+footer {
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  z-index: -1;
+  color: gray;
+}
+.social ion-icon {
+  margin: 5px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul:first-of-type {
+  padding-left: 0;
+}
+footer button {
+  background-color: black;
+  border: 1px gray solid;
+  color: gray;
+}
